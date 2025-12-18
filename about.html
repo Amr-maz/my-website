@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amr El Masri-About</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+    <!-- Hidden checkbox toggle -->
+    <input type="checkbox" id="menu-toggle" />
+
+    <!-- Hamburger icon -->
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- Overlay that appears when sidebar is open -->
+    <label for="menu-toggle" class="overlay"></label>
+
+    <!-- Sidebar navigation -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="home.html" onclick="document.getElementById('menu-toggle').checked = false;">Home</a></li>
+            <li><a href="about.html" class="active" onclick="document.getElementById('menu-toggle').checked = false;">About Me</a></li>
+            <li><a href="education.html" onclick="document.getElementById('menu-toggle').checked = false;">Education</a></li>
+            <li><a href="experience.html" onclick="document.getElementById('menu-toggle').checked = false;">Experience</a></li>
+            <li><a href="projects.html" onclick="document.getElementById('menu-toggle').checked = false;">Projects</a></li>
+            <li><a href="skills.html" onclick="document.getElementById('menu-toggle').checked = false;">Skills</a></li>
+            <li><a href="contact.html" onclick="document.getElementById('menu-toggle').checked = false;">Contact</a></li>
+            <li><a href="research.html" onclick="document.getElementById('menu-toggle').checked = false;">research</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main class="about-main">
+        <section class="about-content">
+            <h1>About Me</h1>
+            <p>Hello! I’m Amr El Masri, a dedicated computer science and engineering major with a passion for machine learning, physics, and the intersection between physics and computer science. I love exploring new ideas, solvin problems that are intellectually stimulating, and working on projects that make a difference.</p>
+
+            <h2>My Journey</h2>
+            <p>Over the years, I’ve gained experience in computer engineering (hardware and software), AI and machine learning, data science, as well as theoretical and experimental physics.<br>I am a firm believer in continuous learning and always strive to improve both professionally and personally.</p>
+
+            <h2>What Drives Me</h2>
+            <p>Creativity, curiosity, and commitment are at the core of everything I do. I enjoy collaborating with others, exchanging knowledge, and pushing the boundaries of what’s possible.</p>
+        </section>
+    </main>
+
+</body>
+</html>

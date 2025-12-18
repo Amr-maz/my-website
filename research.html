@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Research</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+    <!-- Hidden checkbox toggle -->
+    <input type="checkbox" id="menu-toggle" />
+
+    <!-- Hamburger icon -->
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- Overlay that appears when sidebar is open -->
+    <label for="menu-toggle" class="overlay"></label>
+
+    <!-- Sidebar navigation -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="home.html" class="active" onclick="document.getElementById('menu-toggle').checked = false;">Home</a></li>
+            <li><a href="about.html" onclick="document.getElementById('menu-toggle').checked = false;">About Me</a></li>
+            <li><a href="education.html" onclick="document.getElementById('menu-toggle').checked = false;">Education</a></li>
+            <li><a href="experience.html" onclick="document.getElementById('menu-toggle').checked = false;">Experience</a></li>
+            <li><a href="projects.html" onclick="document.getElementById('menu-toggle').checked = false;">Projects</a></li>
+            <li><a href="skills.html" onclick="document.getElementById('menu-toggle').checked = false;">Skills</a></li>
+            <li><a href="contact.html" onclick="document.getElementById('menu-toggle').checked = false;">Contact</a></li>
+            <li><a href="research.html" onclick="document.getElementById('menu-toggle').checked = false;">research</a></li>
+        </ul>
+    </nav>
+
+
+  <!-- Main content -->
+  <main class="projects-main">
+    <section class="projects-content">
+      <h1>Research</h1>
+
+      <div class="project-item">
+        <h2>Research in progress...</h2>
+        <p class="project-tech">Evaluation of the robustness of LLMS in handling msinformation accross sensitive topics</p>
+        <p>Conducting research around the robustness of LLMS when dealing with politically and culturally sensitive topics, through the evaluation of different weights of open weight LLMs like LLAMA with targeted prompt engineering</p>
+        <div class="project-buttons"> <!-- changed -->
+            <a href="website_project.html" class="btn">See Research Details</a>
+            <a href="https://yourportfolio.com" target="_blank" class="btn">View Publication</a>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+
+
+</body>
+</html>

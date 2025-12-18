@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amr El Masri-Skills</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+    <!-- Hidden checkbox toggle -->
+    <input type="checkbox" id="menu-toggle" />
+
+    <!-- Hamburger icon -->
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- Overlay that appears when sidebar is open -->
+    <label for="menu-toggle" class="overlay"></label>
+
+    <!-- Sidebar navigation -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="home.html" onclick="document.getElementById('menu-toggle').checked = false;">Home</a></li>
+            <li><a href="about.html" onclick="document.getElementById('menu-toggle').checked = false;">About Me</a></li>
+            <li><a href="education.html" onclick="document.getElementById('menu-toggle').checked = false;">Education</a></li>
+            <li><a href="experience.html" onclick="document.getElementById('menu-toggle').checked = false;">Experience</a></li>
+            <li><a href="projects.html" onclick="document.getElementById('menu-toggle').checked = false;">Projects</a></li>
+            <li><a href="skills.html" class="active" onclick="document.getElementById('menu-toggle').checked = false;">Skills</a></li>
+            <li><a href="contact.html" onclick="document.getElementById('menu-toggle').checked = false;">Contact</a></li>
+            <li><a href="research.html" onclick="document.getElementById('menu-toggle').checked = false;">research</a></li>
+        </ul>
+    </nav>
+
+
+  <!-- Main content -->
+  <main class="skills-main">
+    <section class="skills-content">
+      <h1>My Skills</h1>
+
+      <div class="skill-category">
+        <h2>Programming Languages</h2>
+        <div class="skill">
+          <span>Python</span>
+          <div class="skill-bar"><div class="skill-fill python"></div></div>
+        </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="skill-bar"><div class="skill-fill js"></div></div>
+        </div>
+        <div class="skill">
+          <span>C++</span>
+          <div class="skill-bar"><div class="skill-fill cpp"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h2>Web Development</h2>
+        <div class="skill">
+          <span>HTML & CSS</span>
+          <div class="skill-bar"><div class="skill-fill htmlcss"></div></div>
+        </div>
+        <div class="skill">
+          <span>React</span>
+          <div class="skill-bar"><div class="skill-fill react"></div></div>
+        </div>
+        <div class="skill">
+          <span>Node.js</span>
+          <div class="skill-bar"><div class="skill-fill node"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h2>Tools & Platforms</h2>
+        <div class="skill">
+          <span>Git & GitHub</span>
+          <div class="skill-bar"><div class="skill-fill git"></div></div>
+        </div>
+        <div class="skill">
+          <span>Docker</span>
+          <div class="skill-bar"><div class="skill-fill docker"></div></div>
+        </div>
+        <div class="skill">
+          <span>AWS</span>
+          <div class="skill-bar"><div class="skill-fill aws"></div></div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>

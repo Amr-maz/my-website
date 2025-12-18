@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUBoutique_project - Project Details</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Hidden checkbox toggle -->
+    <input type="checkbox" id="menu-toggle" />
+
+    <!-- Hamburger icon -->
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- Overlay -->
+    <label for="menu-toggle" class="overlay"></label>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="research.html">Research</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main project detail content -->
+    <main class="project-detail">
+        <h1 class="project-title">AUBoutique: The AUB Marketplace</h1>
+
+        <div class="project-content">
+            <div class="project-images">
+                <img src="images/pic1.jpg" alt="Portfolio Screenshot 1">
+                <img src="images/pic1.jpg" alt="Portfolio Screenshot 2">
+            </div>
+
+            <div class="project-text">
+                <p>
+                    This marketplace app was created to showcase my skills in full-stack development.
+                    Built with Python and using MYSQL??, it constitutes a shared space for the AUB community (or any university or even other communities) to list items for sale and browse items listed by other AUB members in order to create a platform for members to find whar they're looking for at discounted prices and reduce the need to buy new products thus reducing unecesary waste. The app features authentication upon sign in, a user-friendly GUI, and the option to directly message the buyer/seller of the product of interest.
+                </p>
+                <ul>
+                    <li>Mobile-first responsive layout</li>
+                    <li>Interactive navigation menu</li>
+                    <li>Gradient-themed dark mode design</li>
+                    <li>Custom project showcase pages</li>
+                </ul>
+            </div>
+        </div>
+
+        <pre class="code-snippet">
+/* Example CSS from the project */
+body {
+    background: linear-gradient(135deg, #111, #222);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+        </pre>
+
+        <div class="project-buttons">
+            <a href="https://github.com/yourusername/portfolio" target="_blank" class="btn">View Code on GitHub</a>
+            <a href="projects.html" class="btn">Back to Projects</a>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amr El Masri-Education</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+    <!-- Hidden checkbox toggle -->
+    <input type="checkbox" id="menu-toggle" />
+
+    <!-- Hamburger icon -->
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- Overlay that appears when sidebar is open -->
+    <label for="menu-toggle" class="overlay"></label>
+
+    <!-- Sidebar navigation -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="home.html" onclick="document.getElementById('menu-toggle').checked = false;">Home</a></li>
+            <li><a href="about.html" onclick="document.getElementById('menu-toggle').checked = false;">About Me</a></li>
+            <li><a href="education.html" class="active" onclick="document.getElementById('menu-toggle').checked = false;">Education</a></li>
+            <li><a href="experience.html" onclick="document.getElementById('menu-toggle').checked = false;">Experience</a></li>
+            <li><a href="projects.html" onclick="document.getElementById('menu-toggle').checked = false;">Projects</a></li>
+            <li><a href="skills.html" onclick="document.getElementById('menu-toggle').checked = false;">Skills</a></li>
+            <li><a href="contact.html" onclick="document.getElementById('menu-toggle').checked = false;">Contact</a></li>
+            <li><a href="research.html" onclick="document.getElementById('menu-toggle').checked = false;">research</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main class="education-main">
+        <section class="education-content">
+            <h1>Education</h1>
+
+            <div class="edu-item">
+                <h2>Bachelor of Engineering in Computer Science and Engineering<br>with a track in AI and Datascience</h2>
+                <p class="edu-institution">American University of Beirut (AUB)</p>
+                <p class="edu-duration">2023 - Present</p>
+                <ul>
+                    <li>Received the AUB Full Tuition Merit Scholarship</li>
+                    <li>Appeared on the Dean’s Honor List in all terms</li>
+                    <li>4.0 GPA</li>
+                </ul>
+
+            </div>
+
+            <div class="edu-item">
+                <h2>Minor in Physics</h2>
+                <p class="edu-institution">American University of Beirut (AUB)</p>
+                <p class="edu-duration">2023 - Present</p>
+                <p>Completed coursework modern physics, mechanics, quantum physics, and experimental lab work.</p>
+            </div>
+
+            <div class="edu-item">
+                <h2>Minor in Mathematics</h2>
+                <p class="edu-institution">American University of Beirut (AUB)</p>
+                <p class="edu-duration">2023 - Present</p>
+                <p>Completed coursework in calculus, linear algebra, differential equations, and real analysis.</p>
+            </div>
+
+            <div class="edu-item">
+                <h2>Lebanese Baccalaureate</h2>
+                <p class="edu-institution">Amjad High School</p>
+                <p class="edu-duration">2008 - 2023</p>
+                <p>Graduated with distinction in General Sciences.</p>
+                <ul>
+                    <li>Top of class and received honors in all years of study</li>
+                    <li>Grade average 96/100 (Excellent academic standing)</li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+
+
+</body>
+</html>

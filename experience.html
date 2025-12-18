@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amr El Masri-Experience</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+    <!-- Hidden checkbox toggle -->
+    <input type="checkbox" id="menu-toggle" />
+
+    <!-- Hamburger icon -->
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- Overlay that appears when sidebar is open -->
+    <label for="menu-toggle" class="overlay"></label>
+
+    <!-- Sidebar navigation -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="home.html" onclick="document.getElementById('menu-toggle').checked = false;">Home</a></li>
+            <li><a href="about.html" onclick="document.getElementById('menu-toggle').checked = false;">About Me</a></li>
+            <li><a href="education.html" onclick="document.getElementById('menu-toggle').checked = false;">Education</a></li>
+            <li><a href="experience.html" class="active" onclick="document.getElementById('menu-toggle').checked = false;">Experience</a></li>
+            <li><a href="projects.html" onclick="document.getElementById('menu-toggle').checked = false;">Projects</a></li>
+            <li><a href="skills.html" onclick="document.getElementById('menu-toggle').checked = false;">Skills</a></li>
+            <li><a href="contact.html" onclick="document.getElementById('menu-toggle').checked = false;">Contact</a></li>
+            <li><a href="research.html" onclick="document.getElementById('menu-toggle').checked = false;">research</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main class="experience-main">
+        <section class="experience-content">
+            <h1>Professional Experience</h1>
+
+            <div class="exp-item">
+                <h2>Student Advisor</h2>
+                <p class="exp-company">MSFEA Advising Center, AUB</p>
+                <p class="exp-duration">2025 – Present</p>
+                <ul>
+                    <li>Advised students on course selection and study strategies, contributing to improved academic performance and confidence.</li>
+                    <li>Helped students navigate student systems and troubleshoot digital platform issues.</li>
+                    <li>Strengthened leadership, communication, and organizational skills by managing diverse student needs and coordinating activities.</li>
+                    <li>Served as a bridge between students and faculty, ensuring effective communication and problem resolution.</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <h2>Founder and Tutor</h2>
+                <p class="exp-company">Triple A Tutoring Institution</p>
+                <p class="exp-duration">2022 – 2023</p>
+                <ul>
+                    <li>Founded a tutoring institution (with two friends) for high-school students in SAT and school subjects and managed its payments and resources.</li>
+                    <li>Explained material to students, trained them on testing strategies and environments, answered student questions.</li>
+                    <li>Created supplementary exercises and held problem solving sessions to test student understanding.</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <h2>Teaching Assistant - Computer Engineering</h2>
+                <p class="exp-company">American University of Beirut (AUB)</p>
+                <p class="exp-duration">September 2021 – May 2023</p>
+                <ul>
+                    <li>Supported professors by preparing lab materials and grading assignments.</li>
+                    <li>Held weekly office hours to assist students with coursework.</li>
+                    <li>Organized study sessions before exams improving student performance.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
++
