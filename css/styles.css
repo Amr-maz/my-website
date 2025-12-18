@@ -213,7 +213,7 @@ section {
 /* About page main container */
 .about-main {
     min-height: 100vh;
-    background: linear-gradient(135deg, #0A192F, #64FFDA); /* light soft gradient for brightness */
+    background: linear-gradient(135deg, #222, #444); /* light soft gradient for brightness */
     color: #222;
     padding: 60px 40px;
     box-sizing: border-box;
