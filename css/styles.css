@@ -970,3 +970,26 @@ body.dark-theme {
     }
 }
 
+/*design for result graphs*/
+.result-graphs {
+    display: flex;
+    flex-direction: column; /* or row if you want them side by side */
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.result-graphs img {
+    width: 100%;
+    max-width: 600px; /* optional: limit the width */
+    height: auto;
+    border: 1px solid #ccc; /* optional: border around images */
+}
+
+.result-graphs figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: #ccc;
+}
+
+

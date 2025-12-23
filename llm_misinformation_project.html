@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misinformation in LLMs | Research Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Menu Toggle -->
+    <input type="checkbox" id="menu-toggle" />
+
+    <!-- Hamburger -->
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- Overlay -->
+    <label for="menu-toggle" class="overlay"></label>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="research.html">Research</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="projects-main">
+        <div class="projects-content">
+
+            <!-- Title -->
+            <h1>Misinformation in Large Language Models</h1>
+
+            <!-- Overview Card -->
+            <section class="project-item">
+                <h2>Project Overview</h2>
+                <p>
+                    This project evaluates how LLMs generate and respond to misinformation, 
+                    focusing on trustworthiness, consistency, factual precision, and resistance to bias. 
+                    Two open-source LLaMA models (8B and 70B) were benchmarked using multiple datasets 
+                    and a multi-metric evaluation pipeline.
+                </p>
+                <p class="project-tech">
+                    Research Area: NLP · AI Safety · Misinformation Evaluation · LLM Benchmarking
+                </p>
+            </section>
+
+            <!-- Visuals + Focus -->
+            <section class="project-item">
+                <h2>Research Focus</h2>
+
+                <div class="project-content">
+
+
+                    <div class="project-text">
+                        <ul>
+                            <li>Internal consistency of model outputs</li>
+                            <li>Fact precision with external evidence verification</li>
+                            <li>Bias Robustness Metric to test framing sensitivity</li>
+                            <li>Impact of model scale (8B vs 70B) on reliability</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Abstract -->
+            <section class="project-item">
+                <h2>Abstract</h2>
+                <p>
+                    LLMs are prone to producing confident yet incorrect responses. 
+                    This study introduces a structured pipeline combining self-consistency, 
+                    fact precision, and bias robustness metrics to evaluate misinformation tendencies. 
+                    Results show larger models (70B) achieve higher consistency, 
+                    better factual reliability, and more stable behavior under biased prompts. 
+                    Multi-metric evaluation is crucial, as single metrics like confidence alone are insufficient.
+                </p>
+            </section>
+
+            <!-- Methodology -->
+            <section class="project-item">
+                <h2>Methodology</h2>
+                <ul>
+                    <li>Dataset collection from LIAR, FEVER, wiki853, and self-developed prompts</li>
+                    <li>Preprocessing and conversion to standardized CSV formats</li>
+                    <li>Prompting LLaMA models as fact-checkers with structured outputs</li>
+                    <li>Evaluation pipeline measuring self-consistency, fact precision, and bias robustness</li>
+                </ul>
+            </section>
+
+            <!-- Dataset & Metrics -->
+            <section class="project-item">
+                <h2>Dataset & Evaluation Metrics</h2>
+                <p>
+                    The project used both real-world and synthetic misinformation datasets covering politics, 
+                    science, and social issues. Metrics assessed include:
+                </p>
+                <ul>
+                    <li>Self-consistency across multiple model outputs</li>
+                    <li>Fact precision verified with external evidence (FEVER)</li>
+                    <li>Bias Robustness Metric for sensitivity to framing</li>
+                    <li>Confidence, unknown rate, and agreement with verifier</li>
+                </ul>
+            </section>
+
+            <!-- Results -->
+            <section class="project-item">
+                <h2>Key Findings</h2>
+                <ul>
+                    <li>70B model shows higher self-consistency (≈0.928 vs 0.873) and lower risk</li>
+                    <li>Fact precision depends on both model scale and evidence quality</li>
+                    <li>Bias Robustness shows models resist accepting false premises under framing</li>
+                    <li>Single metrics like confidence alone are unreliable; multi-metric evaluation is essential</li>
+                </ul>
+
+                <!-- Result Graphs -->
+                <div class="result-graphs">
+                    <figure>
+                        <figcaption>Self-consistency comparison between LLAMA 8B and 70B models</figcaption>
+                        <img src="images/self_consistency_8b.png" alt="Self-consistency of 8B">
+                        <img src="images/self_consistency_70b.png" alt="Self-consistency of 70B">
+                        
+                    </figure>
+
+                    <figure>
+                        <figcaption>Fact precision comparison across models and datasets</figcaption>
+                        <img src="images/accuracy comparison based on parameter count.png" alt="Fact precision across models and datasets">
+                        
+                    </figure>
+
+                    
+                </div>
+            </section>
+
+
+            <!-- Contributions -->
+            <section class="project-item">
+                <h2>Contributions</h2>
+                <ul>
+                    <li>Multi-metric evaluation pipeline for misinformation in LLMs</li>
+                    <li>Comparison of small (8B) and large (70B) LLaMA models</li>
+                    <li>New dataset including neutral, mildly biased, and strongly biased prompts</li>
+                    <li>Insights on model scale, reasoning stability, and safe deployment practices</li>
+                </ul>
+            </section>
+
+            <!-- Buttons -->
+            <div class="project-buttons">
+                <a href="https://github.com/gkhater/LLM_and_misinformation" class="btn">View Code on GitHub</a>
+                <a href="projects.html" class="btn">Back to Projects</a>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
